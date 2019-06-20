@@ -1,14 +1,48 @@
 # LIBRARY_NAME
 
-LIBRARY_NAME is a library that...
+## Setup
 
-A simple "Hello world" would look like this:
+#### Dependencies
 
-```js
-// src/App.js
-import new-react-lib from 'new-react-lib'
+- Node v11.1.0
+- [yarn](https://yarnpkg.com/pt-BR/)
 
-export default props => (
-  <div />
-)
+#### Clone this repository
+And replace `$$your-project-name$$` with your new package's name.
+
 ```
+$ git clone git@github.com:SeasonedSoftware/new-react-lib.git $$your-project-name$$
+$ cd $$your-project-name$$/
+```
+
+#### Install dependencies and run the scaffold
+
+```
+$ yarn
+```
+
+#### Set up some configs
+
+Run the following command and follow the instructions on terminal:
+
+```
+$ yarn scaffold
+```
+
+#### Run the server
+
+```
+$ yarn start
+```
+
+#### Setup the example app
+
+Open another terminal tab from the same root folder and run:
+
+```
+$ cd example/
+$ yarn
+$ yarn start
+```
+
+# There you go!
