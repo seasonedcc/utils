@@ -1,3 +1,3 @@
-export default {
-  foo: () => 'bar',
-}
+export const foo = () => 'foo bar'
+
+export default { foo }
