@@ -39,6 +39,7 @@ const start = async () => {
       './docs/website/core/Footer.js',
       './example/public/manifest.json',
       './example/src/Example.js',
+      './example/src/basePath.js',
       './example/package.json',
       './package.json',
       './README.md',
