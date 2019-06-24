@@ -52,6 +52,7 @@ const start = async () => {
       './docs/website/siteConfig.js',
       './docs/website/static/index.html',
       './example/public/index.html',
+      './example/src/Example.js',
       './README.md',
     ],
     from: /LIBRARY_NAME/g,
