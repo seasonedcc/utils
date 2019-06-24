@@ -5,12 +5,14 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.1.2",
     "@reach/router": "latest",
     "new-react-lib": "link:..",
     "prop-types": "latest",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
-    "react-scripts": "latest"
+    "react-scripts": "latest",
+    "react-syntax-highlighter": "^10.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

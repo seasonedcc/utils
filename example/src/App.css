@@ -9,6 +9,12 @@ body {
   align-items: center;
 }
 
+#root {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
 .App {
   align-items: stretch;
   color: white;
@@ -26,6 +32,14 @@ body {
   display: flex;
   flex: 1;
 }
+
+.MuiPaper-root {
+  flex: 1;
+  text-align: left;
+  margin: 2rem;
+  overflow: visible !important;
+}
+
 
 a {
   color: #00dcff;
