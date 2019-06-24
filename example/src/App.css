@@ -23,10 +23,8 @@ body {
 }
 
 .App > div {
-  color: #00dcff;
   display: flex;
   flex: 1;
-}
 }
 
 a {
