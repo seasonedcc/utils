@@ -10,22 +10,23 @@ body {
   align-items: center;
 }
 
-#root {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-}
-
 .App {
   align-items: stretch;
   color: white;
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: stretch;
   text-align: center;
   padding: 1rem;
   min-height: 60vh;
-  width: 80vw;
+}
+
+#root {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .App > div {
@@ -37,9 +38,15 @@ body {
   flex: 1;
   text-align: left;
   margin: 2rem;
+  max-width: 860px;
   overflow: visible !important;
 }
 
+.rating .MuiCardContent-root {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
 
 a {
   color: #00dcff;

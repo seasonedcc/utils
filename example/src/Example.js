@@ -10,15 +10,15 @@ const Example = () => (
     <CardHeader title="My sample" />
     <CardContent>
       <LIBRARY_NAME />
-      <SyntaxHighlighter language="javascript" style={prism}>
-        {`
+    </CardContent>
+    <SyntaxHighlighter language="javascript" style={prism}>
+      {`
 import { LIBRARY_NAME } from 'seasoned-evaluator'
 
 // MyComponent
 <LIBRARY_NAME />
-        `}
-      </SyntaxHighlighter>
-    </CardContent>
+      `}
+    </SyntaxHighlighter>
   </Card>
 )
 
