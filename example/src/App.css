@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  font-size: 16px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -20,7 +21,6 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  font-size: calc(10px + 2vmin);
   justify-content: stretch;
   text-align: center;
   padding: 1rem;
