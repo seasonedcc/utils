@@ -29,6 +29,8 @@ Run the following command and follow the instructions on terminal:
 $ yarn scaffold
 $ rm -rf scripts/
 $ yarn remove readline-promise replace-in-file
+$ git add .
+$ git commit -m "Initial commit"
 ```
 
 #### Run the server
