@@ -28,10 +28,11 @@ const start = async () => {
     (await rl.questionAsync(
       `What is your app name in kebab case (${defaultProj})? `,
     )) || defaultProj
-  const defaultName = startCase(project)
+  const defaultName = startCase(project).replace(/\ /g, '')
   const name =
-    (await rl.questionAsync(`What is your website title (${defaultName})? `)) ||
-    defaultName
+    (await rl.questionAsync(
+      `What is your main component name (${defaultName})? `,
+    )) || defaultName
   await replaceInFile({
     files: [
       './docs/docs/introduction.md',
