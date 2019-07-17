@@ -11,7 +11,7 @@
 And replace `$$your-project-name$$` with your new package's name.
 
 ```
-$ git clone git@github.com:SeasonedSoftware/new-react-lib.git $$your-project-name$$
+$ git clone https://github.com/SeasonedSoftware/new-react-lib.git $$your-project-name$$
 $ cd $$your-project-name$$/
 ```
 

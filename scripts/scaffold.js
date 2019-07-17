@@ -33,7 +33,9 @@ const start = async () => {
     (await rl.questionAsync(
       `What is your main component name (${defaultName})? `,
     )) || defaultName
+  fs.unlinkSync('./README.md')
   fs.renameSync('./src/LIBRARY_NAME.tsx', `./src/${name}.tsx`)
+  fs.renameSync('./_README.md', './README.md')
   await replaceInFile({
     files: [
       './docs/docs/introduction.md',
@@ -45,6 +47,7 @@ const start = async () => {
       './example/package.json',
       './package.json',
       './README.md',
+      './.git/config',
     ],
     from: /new-react-lib/g,
     to: project,
@@ -63,7 +66,7 @@ const start = async () => {
     from: /LIBRARY_NAME/g,
     to: name,
   })
-  // fs.copyFileSync('.env.sample', '.env.local')
+
   console.log(`All good! Happy dev 🤓`)
   rl.close()
 }
