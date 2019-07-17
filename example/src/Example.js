@@ -13,7 +13,7 @@ const Example = () => (
     </CardContent>
     <SyntaxHighlighter language="javascript" style={prism}>
       {`
-import { LIBRARY_NAME } from 'seasoned-evaluator'
+import { LIBRARY_NAME } from 'new-react-lib'
 
 // MyComponent
 <LIBRARY_NAME />
