@@ -33,6 +33,7 @@ const start = async () => {
     (await rl.questionAsync(
       `What is your main component name (${defaultName})? `,
     )) || defaultName
+  fs.renameSync('./src/LIBRARY_NAME.tsx', `./src/${name}.tsx`)
   await replaceInFile({
     files: [
       './docs/docs/introduction.md',
@@ -56,6 +57,8 @@ const start = async () => {
       './example/public/index.html',
       './example/src/Example.js',
       './README.md',
+      `./src/index.ts`,
+      `./src/${name}.tsx`,
     ],
     from: /LIBRARY_NAME/g,
     to: name,

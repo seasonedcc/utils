@@ -1,3 +1,1 @@
-export const foo = () => 'foo bar'
-
-export default { foo }
+export { LIBRARY_NAME } from './LIBRARY_NAME'
