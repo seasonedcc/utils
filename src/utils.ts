@@ -1,8 +1,0 @@
-export { fileToBase64 } from './utils/fileToBase64'
-export { clipString } from './utils/clipString'
-export { isIOS } from './utils/isIOS'
-export { nl2Br } from './utils/nl2Br'
-export { sleep } from './utils/sleep'
-export { isDev } from './utils/isDev'
-export { getElByHash } from './utils/getElByHash'
-export { scrollToEl } from './utils/scrollToEl'
