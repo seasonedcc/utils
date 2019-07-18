@@ -3,7 +3,7 @@
 ## Install
 
 ```bash
-yarn add @seasoned-cc/new-react-lib
+yarn add @seasonedsoftware/new-react-lib
 ```
 
 ## Usage
