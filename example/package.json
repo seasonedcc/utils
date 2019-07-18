@@ -7,7 +7,7 @@
   "dependencies": {
     "@material-ui/core": "^4.2.1",
     "@reach/router": "latest",
-    "new-react-lib": "link:..",
+    "@seasoned-cc/new-react-lib": "link:..",
     "prop-types": "latest",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",

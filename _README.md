@@ -3,20 +3,12 @@
 ## Install
 
 ```bash
-yarn add new-react-lib
+yarn add @seasoned-cc/new-react-lib
 ```
 
 ## Usage
 
-```jsx
-import React from 'react'
-
-import { LIBRARY_NAME } from 'new-react-lib'
-
-export default () => (
-  <LIBRARY_NAME />
-)
-```
+Check [the samples](https://seasonedsoftware.github.io/new-react-lib/).
 
 ## License
 
