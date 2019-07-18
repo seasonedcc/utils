@@ -8,8 +8,8 @@
     "type": "git",
     "url": "git+https://github.com/SeasonedSoftware/utils.git"
   },
-  "main": "dist/utils.cjs.js",
-  "module": "dist/utils.esm.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "types": "dist/types/index.d.ts",
   "engines": {
     "node": ">=8",
@@ -29,6 +29,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
+    "lodash": "^4.17.14",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
@@ -39,10 +40,12 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
+    "@types/lodash": "^4.14.136",
     "@types/react": "^16.8.21",
     "@types/react-dom": "^16.8.4",
     "cross-env": "^5.2.0",
     "gh-pages": "^2.0.1",
+    "lodash": "^4.17.14",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "^3.0.1",

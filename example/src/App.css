@@ -32,6 +32,8 @@ body {
 .App > div {
   display: flex;
   flex: 1;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .MuiPaper-root {
@@ -40,12 +42,6 @@ body {
   margin: 2rem;
   max-width: 860px;
   overflow: visible !important;
-}
-
-.rating .MuiCardContent-root {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
 }
 
 a {
