@@ -5,7 +5,7 @@ import { scrollToEl } from '../utils/scrollToEl'
 export const useScrollAfterLoad = (doScroll: boolean) => {
   useEffect(() => {
     if (doScroll) {
-      const el = getElByHash()
+      const el = getElByHash() || undefined
       scrollToEl(el)
     }
   }, [doScroll])
