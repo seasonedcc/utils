@@ -1,14 +1,13 @@
 {
-  "name": "new-react-lib-example",
-  "homepage": "https://SeasonedSoftware.github.io/new-react-lib",
+  "name": "utils-example",
+  "homepage": "https://SeasonedSoftware.github.io/utils",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.2.1",
     "@reach/router": "latest",
-    "@seasonedsoftware/new-react-lib": "link:..",
-    "prop-types": "latest",
+    "@seasonedsoftware/utils": "link:..",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "latest",

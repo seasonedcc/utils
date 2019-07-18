@@ -1,15 +1,15 @@
 {
-  "name": "@seasonedsoftware/new-react-lib",
+  "name": "@seasonedsoftware/utils",
   "version": "0.0.0",
   "description": "LIBRARY_NAME description",
   "author": "SeasonedSoftware",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SeasonedSoftware/new-react-lib.git"
+    "url": "git+https://github.com/SeasonedSoftware/utils.git"
   },
-  "main": "dist/new-react-lib.cjs.js",
-  "module": "dist/new-react-lib.esm.js",
+  "main": "dist/utils.cjs.js",
+  "module": "dist/utils.esm.js",
   "types": "dist/types/index.d.ts",
   "engines": {
     "node": ">=8",
@@ -20,7 +20,6 @@
     "type-check:watch": "npm run type-check -- --watch",
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
-    "scaffold": "node ./scripts/scaffold.js",
     "build": "npm run build:types && npm run build:js",
     "build:js": "rollup -c",
     "build:types": "tsc --emitDeclarationOnly",
@@ -30,14 +29,13 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "prop-types": "15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.4",
-    "@babel/plugin-proposal-class-properties": "^7.5.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.5.4",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
@@ -48,8 +46,6 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "^3.0.1",
-    "readline-promise": "^1.0.4",
-    "replace-in-file": "^4.1.1",
     "rollup": "^1.17.0",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.0.1",
@@ -64,12 +60,14 @@
     "dist"
   ],
   "bugs": {
-    "url": "https://github.com/SeasonedSoftware/new-react-lib/issues"
+    "url": "https://github.com/SeasonedSoftware/utils/issues"
   },
-  "homepage": "https://github.com/SeasonedSoftware/new-react-lib#readme",
+  "homepage": "https://github.com/SeasonedSoftware/utils#readme",
   "directories": {
     "doc": "docs",
     "example": "example"
   },
-  "keywords": ["react"]
+  "keywords": [
+    "react"
+  ]
 }
