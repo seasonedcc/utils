@@ -35,17 +35,24 @@ const MasonryComponent = ({
 }: MasonryProps) => {
   const wrapper: MutableRefObject<null | HTMLDivElement> = useRef(null)
   const initialWidth = fallback * minColumnWidth
-  const [wrapperWidth, setWrapperWidth] = useState(initialWidth)
+  const [state, setState] = useState(initialWidth)
   const { width } = useWindowDimensions()
+
   useEffect(() => {
     if (wrapper.current) {
-      setWrapperWidth(wrapper.current.getBoundingClientRect().width)
+      const bounding = wrapper.current.getBoundingClientRect()
+      setState(bounding.width)
     }
   }, [width])
-  const columns = Math.round(wrapperWidth / minColumnWidth)
+  const columns = Math.round(state / minColumnWidth)
 
   return (
-    <div {...props} style={boxStyles} ref={wrapper}>
+    <div
+      className="masonry-wrapper"
+      {...props}
+      style={{ ...boxStyles, maxWidth: '100%' }}
+      ref={wrapper}
+    >
       {times(columns, index => {
         const isLast = index === columns - 1
         return (

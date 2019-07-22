@@ -45,6 +45,12 @@ body {
   max-width: 95vw;
 }
 
+.masonry-wrapper .MuiPaper-root {
+  margin: .5rem;
+  max-width: none !important;
+  flex: 0;
+}
+
 a {
   color: #00dcff;
 }

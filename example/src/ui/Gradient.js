@@ -20,7 +20,7 @@ const MyComponent = () => (
 )`}
   >
     <LinearGradient colors={['#6132CE', '#B73D97', '#DD4E44']} deg={315}>
-      <div>
+      <div style={{ padding: '1rem' }}>
         <p>This gradient will be applied to the child container.</p>
         <p>Minimum of 2 colors, you can apply as many as you want though.</p>
       </div>
