@@ -53,5 +53,6 @@ function getConfig(name, dependencies = []) {
 export default [
   getConfig('index', ['react', 'react-dom']),
   getConfig('hooks', ['react', 'react-dom']),
+  getConfig('ui', ['react', 'react-dom']),
   getConfig('helpers'),
 ]

@@ -1,11 +1,14 @@
 import React from 'react'
 import Clipped from 'helpers/Clipped'
+import Countdown from 'ui/Countdown'
 import FileToBase from 'helpers/FileToBase'
 import GetByHash from 'helpers/GetByHash'
+import Gradient from 'ui/Gradient'
 import HtmlClass from 'hooks/HtmlClass'
 import Interval from 'hooks/Interval'
 import Ios from 'helpers/Ios'
 import IsDev from 'helpers/IsDev'
+import Masonry from 'ui/Masonry'
 import Mount from 'hooks/Mount'
 import Mounted from 'hooks/Mounted'
 import Nl2Br from 'helpers/Nl2Br'
@@ -23,6 +26,12 @@ import Title from './Title'
 
 const Example = () => (
   <React.Fragment>
+    <Title>Components</Title>
+    <div className="grid">
+      <Countdown />
+      <Gradient />
+      <Masonry />
+    </div>
     <Title>Utils</Title>
     <div className="grid">
       <Sleep />

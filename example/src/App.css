@@ -49,6 +49,12 @@ a {
   color: #00dcff;
 }
 
+.masonry-p {
+  border: 1px solid #b9b9b9;
+  padding: 1rem;
+  margin: 0;
+}
+
 @media (min-width: 868px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
