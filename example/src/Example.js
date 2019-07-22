@@ -20,7 +20,7 @@ import Toggle from './Toggle'
 import WindowDimensions from './WindowDimensions'
 
 const Title = ({ children }) => (
-  <div id={children} style={{ width: '100%' }}>
+  <div id={children} style={{ margin: '6rem 0 3rem', width: '100%' }}>
     <h1>{children}</h1>
   </div>
 )

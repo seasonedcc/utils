@@ -20,6 +20,7 @@ const MyComponent = () => {
 }`}
     >
       <p>
+        Resize the window to see it working<br/>
         Width: <strong>{width}</strong>
         <br />
         Height: <strong>{height}</strong>
