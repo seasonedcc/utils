@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import times from 'lodash/times'
 import { Button, Chip } from '@material-ui/core'
 import { useOnMount, useOnUnmount } from '@seasonedsoftware/utils/hooks'
-import SampleCard from './SampleCard'
+import SampleCard from 'example/SampleCard'
 
 const MountChip = ({ onDelete }) => {
   useOnMount(() => {

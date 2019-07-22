@@ -1,7 +1,7 @@
 import React from 'react'
 import { Router } from '@reach/router'
 import basePath from './basePath'
-import Example from './Example'
+import Example from './example'
 
 import './App.css'
 

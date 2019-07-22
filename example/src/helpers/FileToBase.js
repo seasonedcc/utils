@@ -1,5 +1,5 @@
 import React from 'react'
-import SampleCard from './SampleCard'
+import SampleCard from 'example/SampleCard'
 
 import { fileToBase64 } from '@seasonedsoftware/utils/helpers'
 

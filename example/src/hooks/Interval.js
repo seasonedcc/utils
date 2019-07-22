@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Button } from '@material-ui/core'
 import { useInterval } from '@seasonedsoftware/utils/hooks'
-import SampleCard from './SampleCard'
+import SampleCard from 'example/SampleCard'
 
 export default () => {
   const [delay, setDelay] = useState(null)

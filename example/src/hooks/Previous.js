@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Button } from '@material-ui/core'
 import { usePrevious } from '@seasonedsoftware/utils/hooks'
-import SampleCard from './SampleCard'
+import SampleCard from 'example/SampleCard'
 
 export default () => {
   const [count, setCount] = useState(0)

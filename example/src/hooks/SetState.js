@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSetState } from '@seasonedsoftware/utils/hooks'
 import { Button } from '@material-ui/core'
-import SampleCard from './SampleCard'
+import SampleCard from 'example/SampleCard'
 
 export default () => {
   const [state, setState] = useSetState({

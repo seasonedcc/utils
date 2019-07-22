@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '@material-ui/core'
 import { useHtmlClass, useToggle } from '@seasonedsoftware/utils/hooks'
-import SampleCard from './SampleCard'
+import SampleCard from 'example/SampleCard'
 
 export default () => {
   const [enabled, toggle] = useToggle()

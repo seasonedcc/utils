@@ -1,7 +1,7 @@
 import React from 'react'
 import { useScrollAfterLoad, useToggle } from '@seasonedsoftware/utils/hooks'
 import { Button, CircularProgress } from '@material-ui/core'
-import SampleCard from './SampleCard'
+import SampleCard from 'example/SampleCard'
 
 export default () => {
   const [loaded, toggle] = useToggle()

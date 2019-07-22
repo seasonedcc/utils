@@ -1,7 +1,7 @@
 import React from 'react'
 import { scrollToEl } from '@seasonedsoftware/utils/helpers'
 import { Button } from '@material-ui/core'
-import SampleCard from './SampleCard'
+import SampleCard from 'example/SampleCard'
 
 export default () => (
   <SampleCard

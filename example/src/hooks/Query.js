@@ -1,7 +1,7 @@
 import React from 'react'
 import { useQueryParam } from '@seasonedsoftware/utils/hooks'
 import { Button } from '@material-ui/core'
-import SampleCard from './SampleCard'
+import SampleCard from 'example/SampleCard'
 
 export default () => (
   <SampleCard

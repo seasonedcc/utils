@@ -1,6 +1,6 @@
 import React from 'react'
 import { isDev } from '@seasonedsoftware/utils/helpers'
-import SampleCard from './SampleCard'
+import SampleCard from 'example/SampleCard'
 
 export default () => (
   <SampleCard
