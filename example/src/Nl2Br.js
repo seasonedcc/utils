@@ -1,12 +1,12 @@
 import React from 'react'
-import { nl2Br } from '@seasonedsoftware/utils'
+import { nl2Br } from '@seasonedsoftware/utils/helpers'
 import SampleCard from './SampleCard'
 
 export default () => (
   <SampleCard
     title="nl2Br"
     code={`
-import { nl2Br } from '@seasonedsoftware/utils'
+import { nl2Br } from '@seasonedsoftware/utils/helpers'
 
 const MyComponent = () => {
 return nl2Br(

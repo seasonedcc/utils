@@ -1,5 +1,5 @@
 import React from 'react'
-import { useToggle } from '@seasonedsoftware/utils'
+import { useToggle } from '@seasonedsoftware/utils/hooks'
 import { Switch } from '@material-ui/core'
 import SampleCard from './SampleCard'
 
@@ -9,7 +9,7 @@ export default () => {
     <SampleCard
       title="useToggle"
       code={`
-import { useToggle } from '@seasonedsoftware/utils'
+import { useToggle } from '@seasonedsoftware/utils/hooks'
 
 const MyComponent = () => {
   const [on, toggle] = useToggle(true)

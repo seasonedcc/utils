@@ -7,8 +7,8 @@
   "dependencies": {
     "@material-ui/core": "^4.2.1",
     "@reach/router": "latest",
-    "@seasonedsoftware/utils": "link:..",
-    "lodash": "^4.17.14",
+    "@seasonedsoftware/utils": "link:../dist",
+    "lodash": "^4.17.15",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "latest",

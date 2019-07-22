@@ -1,5 +1,5 @@
 import React from 'react'
-import { useWindowDimensions } from '@seasonedsoftware/utils'
+import { useWindowDimensions } from '@seasonedsoftware/utils/hooks'
 import SampleCard from './SampleCard'
 
 export default () => {
@@ -10,7 +10,7 @@ export default () => {
       code={`
 import {
   useWindowDimensions,
-} from '@seasonedsoftware/utils'
+} from '@seasonedsoftware/utils/hooks'
 
 const MyComponent = () => {
   const { width, height } = useWindowDimensions()
@@ -20,7 +20,8 @@ const MyComponent = () => {
 }`}
     >
       <p>
-        Resize the window to see it working<br/>
+        Resize the window to see it working
+        <br />
         Width: <strong>{width}</strong>
         <br />
         Height: <strong>{height}</strong>

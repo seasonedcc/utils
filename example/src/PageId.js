@@ -1,5 +1,5 @@
 import React from 'react'
-import { usePageId, useBodyClass } from '@seasonedsoftware/utils'
+import { usePageId, useBodyClass } from '@seasonedsoftware/utils/hooks'
 import SampleCard from './SampleCard'
 
 export default () => {
@@ -12,7 +12,7 @@ export default () => {
 import {
   usePageId,
   useBodyClass,
-} from '@seasonedsoftware/utils'
+} from '@seasonedsoftware/utils/hooks'
 
 const MyComponent = () => {
   const pageId = usePageId()

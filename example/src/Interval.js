@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button } from '@material-ui/core'
-import { useInterval } from '@seasonedsoftware/utils'
+import { useInterval } from '@seasonedsoftware/utils/hooks'
 import SampleCard from './SampleCard'
 
 export default () => {
@@ -13,7 +13,7 @@ export default () => {
     <SampleCard
       title="useInterval"
       code={`
-import { useInterval } from '@seasonedsoftware/utils'
+import { useInterval } from '@seasonedsoftware/utils/hooks'
 
 const MyComponent = () => {
   useInterval(() => {

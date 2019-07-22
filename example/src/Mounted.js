@@ -1,5 +1,5 @@
 import React from 'react'
-import { useMounted } from '@seasonedsoftware/utils'
+import { useMounted } from '@seasonedsoftware/utils/hooks'
 import SampleCard from './SampleCard'
 
 export default () => {
@@ -8,7 +8,7 @@ export default () => {
     <SampleCard
       title="useMounted"
       code={`
-import { useMounted } from '@seasonedsoftware/utils'
+import { useMounted } from '@seasonedsoftware/utils/hooks'
 
 const MyComponent = () => {
   const isMounted = useMounted()

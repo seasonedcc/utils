@@ -1,12 +1,12 @@
 import React from 'react'
-import { clipString } from '@seasonedsoftware/utils'
+import { clipString } from '@seasonedsoftware/utils/helpers'
 import SampleCard from './SampleCard'
 
 export default () => (
   <SampleCard
     title="clipString"
     code={`
-import { clipString } from '@seasonedsoftware/utils'
+import { clipString } from '@seasonedsoftware/utils/helpers'
 
 const MyComponent = () => {
 return (

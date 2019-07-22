@@ -1,5 +1,5 @@
 import React from 'react'
-import { scrollToEl } from '@seasonedsoftware/utils'
+import { scrollToEl } from '@seasonedsoftware/utils/helpers'
 import { Button } from '@material-ui/core'
 import SampleCard from './SampleCard'
 
@@ -7,7 +7,7 @@ export default () => (
   <SampleCard
     title="scrollToEl"
     code={`
-import { scrollToEl } from '@seasonedsoftware/utils'
+import { scrollToEl } from '@seasonedsoftware/utils/helpers'
 
 const MyComponent = () => (
   <>

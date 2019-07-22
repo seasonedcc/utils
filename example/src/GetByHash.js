@@ -1,5 +1,5 @@
 import React from 'react'
-import { getElByHash } from '@seasonedsoftware/utils'
+import { getElByHash } from '@seasonedsoftware/utils/helpers'
 import { Button } from '@material-ui/core'
 import SampleCard from './SampleCard'
 
@@ -7,7 +7,7 @@ export default () => (
   <SampleCard
     title="getElByHash"
     code={`
-import { getElByHash } from '@seasonedsoftware/utils'
+import { getElByHash } from '@seasonedsoftware/utils/helpers'
 
 const MyComponent = () => (
   <Button onClick={() => console.log(getElByHash())}>

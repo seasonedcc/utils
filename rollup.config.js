@@ -9,41 +9,49 @@ import pkg from './package.json'
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx']
 
-const config = {
-  input: './src/index.ts',
-  external: ['lodash', 'react', 'react-dom'],
-  plugins: [
-    // Allows node_modules resolution
-    resolve({ extensions }),
+function getConfig(name, dependencies = []) {
+  const config = {
+    input: `./src/${name}.ts`,
+    external: ['lodash', ...dependencies],
+    plugins: [
+      // Allows node_modules resolution
+      resolve({ extensions }),
 
-    // Allow CSS imports
-    postcss(),
-    // Allow bundling cjs modules. Rollup doesn't understand cjs
-    commonjs({
-      include: /node_modules/,
-    }),
-    json(),
-    // Compile TypeScript/JavaScript files
-    babel({ extensions, include: ['src/**/*'], exclude: 'node_modules/**' }),
-    external(),
-  ],
+      // Allow CSS imports
+      postcss(),
+      // Allow bundling cjs modules. Rollup doesn't understand cjs
+      commonjs({
+        include: /node_modules/,
+      }),
+      json(),
+      // Compile TypeScript/JavaScript files
+      babel({ extensions, include: ['src/**/*'], exclude: 'node_modules/**' }),
+      external(),
+    ],
 
-  output: [
-    {
-      file: pkg.main,
-      format: 'cjs',
-      exports: 'named',
-    },
-    {
-      file: pkg.module,
-      format: 'es',
-      exports: 'named',
-    },
-  ],
+    output: [
+      {
+        file: `./dist/${name}.js`,
+        format: 'cjs',
+        exports: 'named',
+      },
+      {
+        file: `./dist/${name}.esm.js`,
+        format: 'es',
+        exports: 'named',
+      },
+    ],
+  }
+
+  if (process.env.NODE_ENV === 'production') {
+    config.plugins.push(uglify())
+  }
+
+  return config
 }
 
-if (process.env.NODE_ENV === 'production') {
-  config.plugins.push(uglify())
-}
-
-export default config
+export default [
+  getConfig('index', ['react', 'react-dom']),
+  getConfig('hooks', ['react', 'react-dom']),
+  getConfig('helpers'),
+]

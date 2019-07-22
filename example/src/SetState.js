@@ -1,5 +1,5 @@
 import React from 'react'
-import { useSetState } from '@seasonedsoftware/utils'
+import { useSetState } from '@seasonedsoftware/utils/hooks'
 import { Button } from '@material-ui/core'
 import SampleCard from './SampleCard'
 
@@ -12,7 +12,7 @@ export default () => {
     <SampleCard
       title="useSetState"
       code={`
-import { useSetState } from '@seasonedsoftware/utils'
+import { useSetState } from '@seasonedsoftware/utils/hooks'
 
 const MyComponent = () => {
   const [state, setState] = useSetState({

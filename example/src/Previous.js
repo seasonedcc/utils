@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button } from '@material-ui/core'
-import { usePrevious } from '@seasonedsoftware/utils'
+import { usePrevious } from '@seasonedsoftware/utils/hooks'
 import SampleCard from './SampleCard'
 
 export default () => {
@@ -10,7 +10,7 @@ export default () => {
     <SampleCard
       title="usePrevious"
       code={`
-import { usePrevious } from '@seasonedsoftware/utils'
+import { usePrevious } from '@seasonedsoftware/utils/hooks'
 
 const MyComponent = () => {
   const [count, setCount] = useState(0)

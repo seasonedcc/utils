@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, CircularProgress } from '@material-ui/core'
-import { sleep } from '@seasonedsoftware/utils'
+import { sleep } from '@seasonedsoftware/utils/helpers'
 import SampleCard from './SampleCard'
 
 export default () => {
@@ -15,7 +15,7 @@ export default () => {
     <SampleCard
       title="sleep"
       code={`
-import { sleep } from '@seasonedsoftware/utils'
+import { sleep } from '@seasonedsoftware/utils/helpers'
 
 const MyComponent = () => {
   const [clicked, setClicked] = useState(false)

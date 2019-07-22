@@ -1,5 +1,5 @@
 import React from 'react'
-import { useQueryParam } from '@seasonedsoftware/utils'
+import { useQueryParam } from '@seasonedsoftware/utils/hooks'
 import { Button } from '@material-ui/core'
 import SampleCard from './SampleCard'
 
@@ -7,7 +7,7 @@ export default () => (
   <SampleCard
     title="useQueryParam"
     code={`
-import { useQueryParam } from '@seasonedsoftware/utils'
+import { useQueryParam } from '@seasonedsoftware/utils/hooks'
 
 const MyComponent = () => (
   <Button onClick={() =>

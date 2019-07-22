@@ -23,7 +23,7 @@ export default () => {
 import {
   useOnMount,
   useOnUnmount,
-} from '@seasonedsoftware/utils'
+} from '@seasonedsoftware/utils/hooks'
 
 const MyComponent = () => {
   useOnMount(() =>

@@ -1,12 +1,12 @@
 import React from 'react'
-import { isIOS } from '@seasonedsoftware/utils'
+import { isIOS } from '@seasonedsoftware/utils/helpers'
 import SampleCard from './SampleCard'
 
 export default () => (
   <SampleCard
     title="isIOS"
     code={`
-import { isIOS } from '@seasonedsoftware/utils'
+import { isIOS } from '@seasonedsoftware/utils/helpers'
 
 const MyComponent = () => {
 return <p>{JSON.stringify(isIOS())}</p>

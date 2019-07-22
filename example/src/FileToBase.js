@@ -1,13 +1,13 @@
 import React from 'react'
 import SampleCard from './SampleCard'
 
-import { fileToBase64 } from '@seasonedsoftware/utils'
+import { fileToBase64 } from '@seasonedsoftware/utils/helpers'
 
 export default () => (
   <SampleCard
     title="fileToBase64"
     code={`
-import { fileToBase64 } from '@seasonedsoftware/utils'
+import { fileToBase64 } from '@seasonedsoftware/utils/helpers'
 
 const MyComponent = () => {
   const onFileChange = async ({ target }) => {

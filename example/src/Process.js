@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useProcessOnce, useInterval } from '@seasonedsoftware/utils'
+import { useProcessOnce, useInterval } from '@seasonedsoftware/utils/hooks'
 import shuffle from 'lodash/shuffle'
 import SampleCard from './SampleCard'
 
@@ -19,7 +19,7 @@ export default () => {
 import {
   useProcessOnce,
   useInterval,
-} from '@seasonedsoftware/utils'
+} from '@seasonedsoftware/utils/hooks'
 import shuffle from 'lodash/shuffle'
 
 const numbers = [0,1,2,3,4,5,6,7,8,9]
