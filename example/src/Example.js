@@ -13,6 +13,7 @@ import PageId from './PageId'
 import Previous from './Previous'
 import Process from './Process'
 import Query from './Query'
+import ScrollAfter from './ScrollAfter'
 import ScrollTo from './ScrollTo'
 import SetState from './SetState'
 import Sleep from './Sleep'
@@ -28,26 +29,31 @@ const Title = ({ children }) => (
 const Example = () => (
   <React.Fragment>
     <Title>Utils</Title>
-    <Sleep />
-    <Clipped />
-    <FileToBase />
-    <GetByHash />
-    <ScrollTo />
-    <IsDev />
-    <Ios />
-    <Nl2Br />
+    <div className="grid">
+      <Sleep />
+      <Clipped />
+      <FileToBase />
+      <GetByHash />
+      <ScrollTo />
+      <IsDev />
+      <Ios />
+      <Nl2Br />
+    </div>
     <Title>Hooks</Title>
-    <HtmlClass />
-    <WindowDimensions />
-    <Previous />
-    <Toggle />
-    <SetState />
-    <Process />
-    <Query />
-    <Interval />
-    <Mount />
-    <Mounted />
-    <PageId />
+    <div className="grid">
+      <HtmlClass />
+      <WindowDimensions />
+      <Previous />
+      <Toggle />
+      <SetState />
+      <Process />
+      <Query />
+      <Interval />
+      <Mount />
+      <Mounted />
+      <PageId />
+      <ScrollAfter />
+    </div>
   </React.Fragment>
 )
 
