@@ -1,3 +1,3 @@
 const isDev = process.env.NODE_ENV === 'development'
 
-export default (isDev ? '' : '/utils')
+export default isDev ? '' : '/utils'
