@@ -5,7 +5,6 @@ import external from 'rollup-plugin-peer-deps-external'
 import babel from 'rollup-plugin-babel'
 import json from 'rollup-plugin-json'
 import postcss from 'rollup-plugin-postcss'
-import pkg from './package.json'
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx']
 
