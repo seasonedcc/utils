@@ -1,4 +1,3 @@
-
 import { nl2Br } from '../nl2Br'
 
 it('returns correctly', () => {
