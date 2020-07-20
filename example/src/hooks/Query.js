@@ -19,7 +19,7 @@ const MyComponent = () => (
   >
     <p>
       Add <em>"?foo=bar"</em> to the URL, click the button bellow and check the
-      logs.
+      logs. It works with multiple args too, just pass an array: <strong>useQueryParam(['foo', 'bar'])</strong>.
     </p>
     <Button
       onClick={() => {
